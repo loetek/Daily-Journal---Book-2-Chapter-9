@@ -3,20 +3,56 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Tell Me How You Feel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="journal.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/journal.css" />
+
 </head>
-<body>
-<form action=""></form>
-    <fieldset>
-        <label for="journalDate"></label>
-        <input type="date" name="journalDate" id="journalDate">
-        <textarea name="textJournal" id="textJournal" cols="30" rows="10"></textarea>
-        <select name="select" id="selectJournal"></select>
-        <option value="journal">Daily Journal</option>
+<body class = dailyJournal>
+
+<h1 class = dailyJournal_h1> Daily Journal </h1>
+
+<form class = dailyJounal_form action=""></form>
+
+    <fieldset class = dailyJournal_Date_Fieldset>
+
+        <label class = dailyJournal--label_Date for="journalDate"> Date of Entry </label>
+        <input class = dailyJournal--input type="date" name="journalDate" id="journalDate">
+
     </fieldset>
+
+        
+    <fieldset class = dailyJournal_Concepts_Fieldset>
+
+            <label class = dailyJournal--label_Concept for="textConcept"> Concept Covered </label>
+            <textarea class = dailyJournal--Concept name="textConcept" id="textConcept" cols="20" rows="1"></textarea>
+
+    </fieldset>
+
+    <fieldset class = dailyJournal_JEntry_Fieldset>
+
+            <label class = dailyJournal--label_JEntry for="textJEntry"> Journal Entry </label>
+            <textarea class = dailyJournal--textJEntry name="textJEntry" id="textJEntry" cols="20" rows="4"></textarea>
+
+    </fieldset>
+
+    <fieldset class = dailyJournal_Mood_Fieldset>
+
+            <label class = dailyJournal--label_Mood for="Mood"> How did you feel today? </label>
+            <select class = dailyJournal--selector name="Mood" id="selectMood">
+
+                    <option dailyJournal--option value="selectMood">  </option>
+                    <option dailyJournal--option value="selectMood"> Meh! </option>
+                    <option dailyJournal--option value="selectMood"> Hella Confused! </option>
+                    <option dailyJournal--option value="selectMood"> Cloud 9! </option>
+                    <option dailyJournal--option value="selectMood"> Extremely frusterated! </option>
+                    <option dailyJournal--option value="selectMood"> Solid day </option>
+
+            </select>
+
+    </fieldset>
+
+    <button class = journalButton type="button"> REC </button>
 
     
 </body>

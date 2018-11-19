@@ -1,0 +1,58 @@
+.dailyJournal{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(107, 104, 104);
+}
+
+.dailyJournal_Date_Fieldset{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    border-radius: 12px;
+    background-color: #e7e7e7;
+    
+
+}
+
+.dailyJournal_Concepts_Fieldset{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    border-radius: 12px;
+    background-color: #e7e7e7;
+
+}
+
+.dailyJournal_JEntry_Fieldset{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    border-radius: 12px;
+    background-color: #e7e7e7;
+
+}
+
+.dailyJournal_Mood_Fieldset{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    border-radius: 12px;
+    background-color: #e7e7e7;
+
+}
+
+.journalButton{
+
+    background-color: chartreuse;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 8.8%;
+
+}
