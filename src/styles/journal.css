@@ -1,19 +1,53 @@
+.dailyJournal_h1{
+
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font: bolder;
+
+}
+
+
 .dailyJournal{
 
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: rgb(107, 104, 104);
+    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99); 
+    align-items: center;
+    justify-content: center;
+}
+
+.dailyJournal--label_Date{
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: white;
+    font: bold;
+
 }
 
 .dailyJournal_Date_Fieldset{
 
     display: flex;
     flex-wrap: wrap;
-    width: 15%;
+    width: 20%;
     border-radius: 12px;
-    background-color: #e7e7e7;
+    background: linear-gradient(to right,#3b8d99 , #6b6b83,#aa4b6b );
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+
+}
+
+.dailyJournal--label_Concept{
     
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: white;
+    font: bold;
 
 }
 
@@ -21,9 +55,21 @@
 
     display: flex;
     flex-wrap: wrap;
-    width: 15%;
+    width: 20%;
     border-radius: 12px;
-    background-color: #e7e7e7;
+    background: linear-gradient(to right, #3b8d99 , #6b6b83,#aa4b6b );
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+
+}
+
+.dailyJournal--label_JEntry{
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: white;
+    font: bold;
 
 }
 
@@ -31,9 +77,19 @@
 
     display: flex;
     flex-wrap: wrap;
-    width: 15%;
+    width: 20%;
     border-radius: 12px;
-    background-color: #e7e7e7;
+    background: linear-gradient(to right, #3b8d99 , #6b6b83,#aa4b6b );
+    border-color: transparent;
+
+}
+
+.dailyJournal--label_Mood{
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: white;
+    font: bold;
 
 }
 
@@ -41,18 +97,68 @@
 
     display: flex;
     flex-wrap: wrap;
-    width: 15%;
+    width: 20%;
     border-radius: 12px;
-    background-color: #e7e7e7;
+    background: linear-gradient(to right,#3b8d99 , #6b6b83,#aa4b6b );
+    border-color: transparent;
 
 }
 
-.journalButton{
+.journalButton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: darkred;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 150px;
+    transition: all 1s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .journalButton {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+  }
+  
+  .journalButton:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 40px;
+    transition: 1s;
+  }
+  
+  .journalButton:hover  {
+    padding-right: 40px;
+  }
+  
+  .journalButton:hover:after {
+    opacity: 5;
+    right: 20px;
+  }
+   
+  .entryLog{
 
-    background-color: chartreuse;
-    border-radius: 12px;
-    font-size: 20px;
-    margin-top: 20px;
-    width: 8.8%;
+    border-style: solid, white;
+    border-width: 40%;
+    width: 40%;
 
-}
+
+  }
+
+  p {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: white;
+    font: bold;
+
+  }
+
