@@ -7,6 +7,13 @@ const journalEntries = [
     }
 ]
 
+let inputDate = document.querySelector('.dailyJournal--input'); 
+let inputConcept = document.querySelector('.dailyJournal--Concept');
+let inputEntry = document.querySelector('.dailyJournal--Conceptdaily');
+// let inputMood = doument.querySelector('.dailyJournal--selector');
+
+
+console.log (inputDate, inputConcept, inputEntry);
 /*
     Purpose: To create, and return, a string template that
     represents a single journal entry object as HTML
@@ -26,9 +33,7 @@ const makeJournalEntryComponent = (entry) => {
     
 }
 
-makeJournalEntryComponent("roasted pork");
-
-console.log (jEntries);
+// console.log (jEntries);
 
 //This function creates the entries on the document. 
 const renderJournalEntries = (journalEntry, entryTitle) => {
@@ -41,4 +46,7 @@ const renderJournalEntries = (journalEntry, entryTitle) => {
 let clickMe = document.querySelector('.journalButton');
 
 clickMe.addEventListener("click", renderJournalEntries)
+
+
+renderJournalEntries("today", "tommorow");
 
