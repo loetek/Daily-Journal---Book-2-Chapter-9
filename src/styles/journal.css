@@ -20,6 +20,30 @@
     justify-content: center;
 }
 
+    /* .dailyJournal{
+
+        background: linear-gradient(359deg, #aa4b6b, #6b6b83, #3b8d99);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 41s ease infinite;
+    animation: AnimationName 41s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:49% 0%}
+        50%{background-position:52% 100%}
+        100%{background-position:49% 0%}
+    }
+    @keyframes AnimationName { 
+        0%{background-position:49% 0%}
+        50%{background-position:52% 100%}
+        100%{background-position:49% 0%}
+    }
+
+    } */
+
+
+
+
 .dailyJournal--label_Date{
     
     font-family: 'Raleway', sans-serif;
