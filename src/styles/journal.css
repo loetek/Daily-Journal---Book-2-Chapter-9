@@ -168,12 +168,13 @@
     right: 20px;
   }
    
-  .entryLog{
+  .entryLog {
 
-    border-style: solid, white;
+    border-style: solid;
+    border-color: white;
     border-width: 40%;
     width: 40%;
-
+    border-radius: 12px;
 
   }
 

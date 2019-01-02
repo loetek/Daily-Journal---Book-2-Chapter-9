@@ -1,0 +1,18 @@
+{
+  "journalEntries": [
+    {
+      "Date": "",
+      "Concept": "234234242",
+      "Entry": "",
+      "Mood": "",
+      "id": 1
+    },
+    {
+      "Date": "2019-01-21",
+      "Concept": "adfa",
+      "Entry": "df",
+      "Mood": "Cloud 9!",
+      "id": 2
+    }
+  ]
+}

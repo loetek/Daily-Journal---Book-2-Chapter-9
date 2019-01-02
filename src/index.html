@@ -24,30 +24,30 @@
         
     <fieldset class = dailyJournal_Concepts_Fieldset>
 
-            <label class = dailyJournal--label_Concept for="textConcept"> Concept Covered </label>
-            <textarea class = dailyJournal--Concept name="textConcept" id="textConcept" cols="20" rows="1"></textarea>
+        <label class = dailyJournal--label_Concept for="textConcept"> Concept Covered </label>
+        <textarea class = dailyJournal--Concept name="textConcept" id="textConcept" cols="20" rows="1"></textarea>
 
     </fieldset>
 
     <fieldset class = dailyJournal_JEntry_Fieldset>
 
-            <label class = dailyJournal--label_JEntry for="textJEntry"> Journal Entry </label>
-            <textarea class = dailyJournal--textJEntry name="textJEntry" id="textJEntry" cols="20" rows="4"></textarea>
+        <label class = dailyJournal--label_JEntry for="textJEntry"> Journal Entry </label>
+        <textarea class = dailyJournal--textJEntry name="textJEntry" id="textJEntry" cols="20" rows="4"></textarea>
 
     </fieldset>
 
     <fieldset class = dailyJournal_Mood_Fieldset>
 
-            <label class = dailyJournal--label_Mood for="Mood"> How did you feel today? </label>
-            <select class = dailyJournal--selector name="Mood" id="selectMood">
+        <label class = dailyJournal--label_Mood for="Mood"> How did you feel today? </label>
+        <select class = dailyJournal--selector name="Mood" id="selectMood">
 
-                    <option dailyJournal--option value="selectMood">  </option>
-                    <option dailyJournal--option value="selectMood"> Meh! </option>
-                    <option dailyJournal--option value="selectMood"> Hella Confused! </option>
-                    <option dailyJournal--option value="selectMood"> Cloud 9! </option>
-                    <option dailyJournal--option value="selectMood"> Extremely frusterated! </option>
-                    <option dailyJournal--option value="selectMood"> Solid day </option>
-                    <option dailyJournal--option value="selectMood"> 😂 </option>
+                <option dailyJournal--option value="selectMood">  </option>
+                <option dailyJournal--option value="Meh!"> Meh! </option>
+                <option dailyJournal--option value="Hella Confused!"> Hella Confused! </option>
+                <option dailyJournal--option value="Cloud 9!"> Cloud 9! </option>
+                <option dailyJournal--option value="Extremely frusterated!"> Extremely frusterated! </option>
+                <option dailyJournal--option value="🙋"> 🙋  </option>
+                <option dailyJournal--option value="😂"> 😂 </option>
 
             </select>
 
@@ -63,7 +63,11 @@
        
   
 
+    
+    <script src="scripts/jentriesAppender.js"></script>
+    <script src="scripts/jDataBase.js"></script>
+    <script src="scripts/jentryBuilder.js"></script>
+    <script src="scripts/journal.js"></script>
 
-<script src="scripts/journal.js"></script>
 </body>
 </html>
