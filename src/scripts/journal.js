@@ -1,52 +1,42 @@
-const journalEntries = [
-    {
-        date: "07/24/2018",
-        concept: "Array methods",
-        entry: "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
-        mood: "Ok"
-    }
-]
 
-let inputDate = document.querySelector('.dailyJournal--input'); 
-let inputConcept = document.querySelector('.dailyJournal--Concept');
-let inputEntry = document.querySelector('.dailyJournal--Conceptdaily');
-// let inputMood = doument.querySelector('.dailyJournal--selector');
+//This function collects all the user input that is typed onto the page. It then places all that data into an object called userJournalEntry. 
+let inputDate = '';
+let inputConcept = '';
+let inputEntry = '';
+let inputMood = '';
+let userJournalEntry = {};
 
+function collectUserInput () {
+inputDate = document.querySelector('.dailyJournal--input').value; 
+renderJournalEntries(inputDate, "Date: ");
+inputConcept = document.querySelector('.dailyJournal--Concept').value;
+renderJournalEntries(inputConcept, "Concept: ");
+inputEntry = document.querySelector('.dailyJournal--textJEntry').value;
+renderJournalEntries(inputEntry, "Entry: ");
+inputMood = document.querySelector('.dailyJournal--selector').value;
+renderJournalEntries(inputMood, "Mood: ");
+userJournalEntry = {Date: inputDate, Concept: inputConcept, Entry: inputEntry, Mood: inputMood};
+console.log(userJournalEntry);
+return userJournalEntry;
 
-console.log (inputDate, inputConcept, inputEntry);
-/*
-    Purpose: To create, and return, a string template that
-    represents a single journal entry object as HTML
-
-    Arguments: journalEntry (object)
-    */
-   let jEntries = '';
-const makeJournalEntryComponent = (entry) => {
-    // Create your own HTML structure for a journal entry
-    journalEntries.push(entry);
-    for (let i =0; i < journalEntries.length; i++){
-        jEntries = journalEntries[i];
-    }
-        // jEntries.push(entry);
-        // console.log(jEntries);
-        return(jEntries);
-    
 }
 
-// console.log (jEntries);
-
-//This function creates the entries on the document. 
-const renderJournalEntries = (journalEntry, entryTitle) => {
-
-    let jEntries = `<p class = ${entryTitle}> ${journalEntry}</p>`;
-    document.querySelector('.entryLog').innerHTML += `${jEntries}`;
-    
-}
-
+// Event Listeners that listen for the REC button and pass the object above to the create entries function on Appender.
 let clickMe = document.querySelector('.journalButton');
+clickMe.addEventListener("click", function () {
+   let allUserInput = collectUserInput();
+   data.contactPost(allUserInput);
+//    journalAppender.makeJournalEntryComponent(allUserInput);
+    console.log (allUserInput);
+})
 
-clickMe.addEventListener("click", renderJournalEntries)
+// Event listener to display content to the screen.
+clickMe.addEventListener("click", function () {
 
 
-renderJournalEntries("today", "tommorow");
+
+
+})
+
+
 
