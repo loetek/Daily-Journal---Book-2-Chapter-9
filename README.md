@@ -11,6 +11,9 @@ Mood. This should be a select element with as many option child elements as you 
 After you have completed the form, place a button element beneath it labeled Record Journal Entry, or any other text that you would like.
 
 
+![image](https://user-images.githubusercontent.com/3199884/50848359-af805e80-1339-11e9-8dd8-97d217ebb1ee.png)
+
+
 
 Status Updates!
 
