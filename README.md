@@ -10,8 +10,7 @@ Journal entry. This is a textarea field where you can enter in as much text abou
 Mood. This should be a select element with as many option child elements as you would like to describe your mood for the day. You can start with the simply happy, fine, and sad values, or pick your own scaling system.
 After you have completed the form, place a button element beneath it labeled Record Journal Entry, or any other text that you would like.
 
-
-![image](https://user-images.githubusercontent.com/3199884/50853743-ba8ebb00-1348-11e9-9bab-65969a35386b.png)
+file:///Users/jdwheeler/Documents/gifs/2019-01-08%2013.23.08.gif
 
 
 
